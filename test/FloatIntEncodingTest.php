@@ -21,7 +21,7 @@ require_once('test_helper.php');
 /**
  * Class FloatIntEncodingTest
  */
-class FloatIntEncodingTest extends PHPUnit_Framework_TestCase
+class FloatIntEncodingTest extends \PHPUnit\Framework\TestCase
 {
   const FLOAT_TYPE = 'float';
   const DOUBLE_TYPE = 'double';
@@ -57,7 +57,7 @@ class FloatIntEncodingTest extends PHPUnit_Framework_TestCase
     self::$INT_BITS_NEG_INF  = strrev(pack('H*', 'ff800000'));
   }
 
-  function setUp()
+  function setUp(): void
   {
     self::make_special_vals();
   }

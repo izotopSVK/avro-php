@@ -22,7 +22,7 @@ require_once('test_helper.php');
 /**
  * Class DatumIOTest
  */
-class DatumIOTest extends PHPUnit_Framework_TestCase
+class DatumIOTest extends \PHPUnit\Framework\TestCase
 {
   /**
    * @dataProvider data_provider

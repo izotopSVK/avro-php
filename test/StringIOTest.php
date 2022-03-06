@@ -22,7 +22,7 @@ require_once('test_helper.php');
 /**
  * Class StringIOTest
  */
-class StringIOTest extends PHPUnit_Framework_TestCase
+class StringIOTest extends \PHPUnit\Framework\TestCase
 {
 
   public function test_write()

@@ -22,12 +22,12 @@ require_once('test_helper.php');
 /**
  * Class InterOpTest
  */
-class InterOpTest extends PHPUnit_Framework_TestCase
+class InterOpTest extends \PHPUnit\Framework\TestCase
 {
   var $projection_json;
   var $projection;
 
-  public function setUp()
+  public function setUp(): void
   {
     $interop_schema_file_name = AVRO_INTEROP_SCHEMA;
     $this->projection_json = file_get_contents($interop_schema_file_name);

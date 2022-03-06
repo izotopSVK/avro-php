@@ -17,6 +17,8 @@
  * limitations under the License.
  */
 
+use PHPUnit\Framework\TestSuite;
+
 require_once('DataFileTest.php');
 require_once('SchemaTest.php');
 require_once('NameTest.php');
@@ -35,11 +37,11 @@ require_once('FileIOTest.php');
 class AllTests
 {
   /**
-   * @return PHPUnit_Framework_TestSuite
+   * @return TestSuite
    */
   public static function suite()
   {
-    $suite = new PHPUnit_Framework_TestSuite('AvroAllTests');
+    $suite = new TestSuite('AvroAllTests');
     $suite->addTestSuite('DataFileTest');
     $suite->addTestSuite('SchemaTest');
     $suite->addTestSuite('NameTest');

@@ -23,9 +23,9 @@ require_once('test_helper.php');
 /**
  * Class ProtocolFileTest
  */
-class ProtocolFileTest extends PHPUnit_Framework_TestCase
+class ProtocolFileTest extends \PHPUnit\Framework\TestCase
 {
-  protected function setUp() {
+  protected function setUp(): void {
   }
 
   public function testParsing() {
