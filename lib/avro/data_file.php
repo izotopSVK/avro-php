@@ -490,6 +490,8 @@ class AvroDataIOWriter
    */
   private $codec;
 
+  private $sync_marker;
+
   /**
    * @param AvroIO $io
    * @param AvroIODatumWriter $datum_writer
